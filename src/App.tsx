@@ -67,20 +67,20 @@ function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-100 via-white to-gray-50">
+    <div className="min-h-screen bg-gradient-to-br from-muted via-background to-muted/50">
       {/* Navigation */}
       <nav className="w-full p-6 flex justify-between items-center">
         <div className="flex items-center gap-2">
-          <BookOpen className="h-8 w-8 text-gray-900" />
-          <span className="text-2xl font-bold text-gray-900">Studen</span>
+          <BookOpen className="h-8 w-8 text-foreground" />
+          <span className="text-2xl font-bold text-foreground">Studen</span>
         </div>
         <div className="hidden md:flex items-center gap-6">
-          <a href="#features" className="text-gray-600 hover:text-gray-900 transition-colors">Features</a>
-          <a href="#how-it-works" className="text-gray-600 hover:text-gray-900 transition-colors">How it Works</a>
-          <Button variant="outline" className="border-gray-700 text-gray-700 hover:bg-gray-50">
+          <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">Features</a>
+          <a href="#how-it-works" className="text-muted-foreground hover:text-foreground transition-colors">How it Works</a>
+          <Button variant="outline">
             Sign In
           </Button>
-          <Button className="bg-gray-900 hover:bg-gray-800">
+          <Button>
             Get Started
           </Button>
         </div>
@@ -88,20 +88,20 @@ function App() {
 
       {/* Hero Section */}
       <section className="px-6 py-20 text-center max-w-6xl mx-auto">
-        <div className="mb-6 inline-flex items-center gap-2 bg-gray-100 text-gray-800 px-4 py-2 rounded-full text-sm font-medium">
+        <div className="mb-6 inline-flex items-center gap-2 bg-muted text-muted-foreground px-4 py-2 rounded-full text-sm font-medium">
           <Sparkles className="h-4 w-4" />
           AI-Powered Study Assistant
         </div>
-        <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+        <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
           Transform Any Content Into
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-700 to-gray-900"> Smart Study Material</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary/80 to-foreground"> Smart Study Material</span>
         </h1>
-        <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
           Upload documents, videos, or audio files and let our AI create personalized summaries and flashcards.
           Study smarter, not harder with Studen.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-          <Button size="lg" className="bg-gray-900 hover:bg-gray-800 text-lg px-8 py-4">
+          <Button size="lg" className="text-lg px-8 py-4">
             Start Studying for Free
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
@@ -113,19 +113,19 @@ function App() {
 
         {/* Hero Visual */}
         <div className="relative mx-auto max-w-4xl">
-          <div className="bg-white rounded-2xl shadow-2xl p-8 border border-gray-200">
+          <div className="bg-card rounded-2xl shadow-2xl p-8 border border-border">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="flex flex-col items-center p-4 bg-gray-50 rounded-xl">
-                <FileText className="h-12 w-12 text-gray-700 mb-3" />
-                <span className="font-semibold text-gray-900">Upload Content</span>
+              <div className="flex flex-col items-center p-4 bg-muted/50 rounded-xl">
+                <FileText className="h-12 w-12 text-muted-foreground mb-3" />
+                <span className="font-semibold text-card-foreground">Upload Content</span>
               </div>
-              <div className="flex flex-col items-center p-4 bg-gray-100 rounded-xl">
-                <Brain className="h-12 w-12 text-gray-800 mb-3" />
-                <span className="font-semibold text-gray-900">AI Processing</span>
+              <div className="flex flex-col items-center p-4 bg-muted rounded-xl">
+                <Brain className="h-12 w-12 text-primary mb-3" />
+                <span className="font-semibold text-card-foreground">AI Processing</span>
               </div>
-              <div className="flex flex-col items-center p-4 bg-gray-50 rounded-xl">
-                <Zap className="h-12 w-12 text-gray-900 mb-3" />
-                <span className="font-semibold text-gray-900">Study Materials</span>
+              <div className="flex flex-col items-center p-4 bg-muted/50 rounded-xl">
+                <Zap className="h-12 w-12 text-foreground mb-3" />
+                <span className="font-semibold text-card-foreground">Study Materials</span>
               </div>
             </div>
           </div>
@@ -133,13 +133,13 @@ function App() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="px-6 py-20 bg-white">
+      <section id="features" className="px-6 py-20 bg-background">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
               Everything You Need to Study Effectively
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Our AI understands multiple content formats and creates the perfect study materials for your learning style.
             </p>
           </div>
@@ -147,11 +147,11 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
               <div key={index} className="text-center group">
-                <div className="bg-gradient-to-br from-gray-50 to-gray-100 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 text-gray-700 group-hover:scale-110 transition-transform duration-300">
+                <div className="bg-gradient-to-br from-muted/50 to-muted w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 text-muted-foreground group-hover:scale-110 transition-transform duration-300">
                   {feature.icon}
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{feature.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+                <h3 className="text-xl font-semibold text-foreground mb-3">{feature.title}</h3>
+                <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -159,44 +159,44 @@ function App() {
       </section>
 
       {/* How It Works Section */}
-      <section id="how-it-works" className="px-6 py-20 bg-gray-50">
+      <section id="how-it-works" className="px-6 py-20 bg-muted/30">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
               Simple. Fast. Effective.
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-muted-foreground">
               Get started in three easy steps
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="text-center">
-              <div className="bg-gray-700 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">
+              <div className="bg-secondary text-secondary-foreground w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">
                 1
               </div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Upload Your Content</h3>
-              <p className="text-gray-600 leading-relaxed">
+              <h3 className="text-2xl font-semibold text-foreground mb-4">Upload Your Content</h3>
+              <p className="text-muted-foreground leading-relaxed">
                 Drag and drop PDFs, DOCX files, or paste YouTube links. We support audio and video files too.
               </p>
             </div>
 
             <div className="text-center">
-              <div className="bg-gray-800 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">
+              <div className="bg-primary text-primary-foreground w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">
                 2
               </div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">AI Analysis</h3>
-              <p className="text-gray-600 leading-relaxed">
+              <h3 className="text-2xl font-semibold text-foreground mb-4">AI Analysis</h3>
+              <p className="text-muted-foreground leading-relaxed">
                 Our advanced AI extracts key concepts, main ideas, and important details from your content.
               </p>
             </div>
 
             <div className="text-center">
-              <div className="bg-gray-900 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">
+              <div className="bg-foreground text-background w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">
                 3
               </div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Study & Learn</h3>
-              <p className="text-gray-600 leading-relaxed">
+              <h3 className="text-2xl font-semibold text-foreground mb-4">Study & Learn</h3>
+              <p className="text-muted-foreground leading-relaxed">
                 Review summaries, practice with flashcards, or listen to audio versions of your materials.
               </p>
             </div>
@@ -205,52 +205,52 @@ function App() {
       </section>
 
       {/* Benefits Section */}
-      <section className="px-6 py-20 bg-white">
+      <section className="px-6 py-20 bg-background">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
                 Why Choose Studen?
               </h2>
-              <p className="text-xl text-gray-600 mb-8">
+              <p className="text-xl text-muted-foreground mb-8">
                 Join thousands of students who have revolutionized their study habits with AI-powered learning.
               </p>
               <div className="space-y-4">
                 {benefits.map((benefit, index) => (
                   <div key={index} className="flex items-center gap-4">
-                    <CheckCircle className="h-6 w-6 text-gray-700 flex-shrink-0" />
-                    <span className="text-lg text-gray-700">{benefit}</span>
+                    <CheckCircle className="h-6 w-6 text-muted-foreground flex-shrink-0" />
+                    <span className="text-lg text-foreground">{benefit}</span>
                   </div>
                 ))}
               </div>
               <div className="mt-8">
-                <Button size="lg" className="bg-gray-900 hover:bg-gray-800">
+                <Button size="lg">
                   Start Your Free Trial
                 </Button>
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8">
-              <div className="bg-white rounded-xl p-6 shadow-lg">
+            <div className="bg-gradient-to-br from-muted/50 to-muted rounded-2xl p-8">
+              <div className="bg-card rounded-xl p-6 shadow-lg">
                 <div className="flex items-center gap-3 mb-4">
-                  <Users className="h-8 w-8 text-gray-700" />
+                  <Users className="h-8 w-8 text-muted-foreground" />
                   <div>
-                    <div className="font-semibold text-gray-900">50,000+</div>
-                    <div className="text-sm text-gray-600">Active Students</div>
+                    <div className="font-semibold text-card-foreground">50,000+</div>
+                    <div className="text-sm text-muted-foreground">Active Students</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-3 mb-4">
-                  <BookOpen className="h-8 w-8 text-gray-800" />
+                  <BookOpen className="h-8 w-8 text-primary" />
                   <div>
-                    <div className="font-semibold text-gray-900">1M+</div>
-                    <div className="text-sm text-gray-600">Documents Processed</div>
+                    <div className="font-semibold text-card-foreground">1M+</div>
+                    <div className="text-sm text-muted-foreground">Documents Processed</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Star className="h-8 w-8 text-gray-900" />
+                  <Star className="h-8 w-8 text-foreground" />
                   <div>
-                    <div className="font-semibold text-gray-900">4.9/5</div>
-                    <div className="text-sm text-gray-600">Student Rating</div>
+                    <div className="font-semibold text-card-foreground">4.9/5</div>
+                    <div className="text-sm text-muted-foreground">Student Rating</div>
                   </div>
                 </div>
               </div>
@@ -260,29 +260,29 @@ function App() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="px-6 py-20 bg-gray-50">
+      <section className="px-6 py-20 bg-muted/30">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
               Loved by Students Worldwide
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-muted-foreground">
               See what our users have to say about their Studen experience
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+              <div key={index} className="bg-card p-6 rounded-xl shadow-lg border border-border">
                 <div className="flex gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-gray-700 text-gray-700" />
+                    <Star key={i} className="h-5 w-5 fill-muted-foreground text-muted-foreground" />
                   ))}
                 </div>
-                <p className="text-gray-700 mb-6 leading-relaxed">"{testimonial.content}"</p>
+                <p className="text-card-foreground mb-6 leading-relaxed">"{testimonial.content}"</p>
                 <div>
-                  <div className="font-semibold text-gray-900">{testimonial.name}</div>
-                  <div className="text-sm text-gray-600">{testimonial.role}</div>
+                  <div className="font-semibold text-card-foreground">{testimonial.name}</div>
+                  <div className="text-sm text-muted-foreground">{testimonial.role}</div>
                 </div>
               </div>
             ))}
@@ -291,7 +291,7 @@ function App() {
       </section>
 
       {/* CTA Section */}
-      <section className="px-6 py-20 bg-gradient-to-r from-gray-800 to-gray-900 text-white">
+      <section className="px-6 py-20 bg-gradient-to-r from-primary/80 to-foreground text-primary-foreground">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Ready to Transform Your Study Habits?
@@ -312,48 +312,48 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white px-6 py-12">
+      <footer className="bg-foreground text-background px-6 py-12">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
               <div className="flex items-center gap-2 mb-4">
-                <BookOpen className="h-8 w-8 text-gray-400" />
+                <BookOpen className="h-8 w-8 text-muted" />
                 <span className="text-2xl font-bold">Studen</span>
               </div>
-              <p className="text-gray-400 mb-6 max-w-md">
+              <p className="text-muted mb-6 max-w-md">
                 Empowering students worldwide with AI-powered study tools. Learn faster, study smarter, achieve more.
               </p>
               <div className="flex gap-4">
-                <Button variant="outline" size="sm" className="border-gray-600 text-gray-300 hover:bg-gray-800">
+                <Button variant="outline" size="sm" className="border-border/20 text-muted hover:bg-background/10">
                   Follow on Twitter
                 </Button>
-                <Button variant="outline" size="sm" className="border-gray-600 text-gray-300 hover:bg-gray-800">
+                <Button variant="outline" size="sm" className="border-border/20 text-muted hover:bg-background/10">
                   Join Discord
                 </Button>
               </div>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4">Product</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Features</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Integrations</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">API</a></li>
+              <h4 className="font-semibold mb-4 text-background">Product</h4>
+              <ul className="space-y-2 text-muted">
+                <li><a href="#" className="hover:text-background transition-colors">Features</a></li>
+                <li><a href="#" className="hover:text-background transition-colors">Integrations</a></li>
+                <li><a href="#" className="hover:text-background transition-colors">API</a></li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4">Support</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Help Center</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Contact Us</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Terms of Service</a></li>
+              <h4 className="font-semibold mb-4 text-background">Support</h4>
+              <ul className="space-y-2 text-muted">
+                <li><a href="#" className="hover:text-background transition-colors">Help Center</a></li>
+                <li><a href="#" className="hover:text-background transition-colors">Contact Us</a></li>
+                <li><a href="#" className="hover:text-background transition-colors">Privacy Policy</a></li>
+                <li><a href="#" className="hover:text-background transition-colors">Terms of Service</a></li>
               </ul>
             </div>
           </div>
 
-          <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+          <div className="border-t border-border/20 mt-12 pt-8 text-center text-muted">
             <p>&copy; 2024 Studen. All rights reserved.</p>
           </div>
         </div>

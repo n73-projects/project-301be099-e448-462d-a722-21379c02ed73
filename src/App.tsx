@@ -67,20 +67,20 @@ function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-blue-100 via-white to-blue-50">
       {/* Navigation */}
       <nav className="w-full p-6 flex justify-between items-center">
         <div className="flex items-center gap-2">
-          <BookOpen className="h-8 w-8 text-blue-600" />
+          <BookOpen className="h-8 w-8 text-blue-700" />
           <span className="text-2xl font-bold text-gray-900">Studen</span>
         </div>
         <div className="hidden md:flex items-center gap-6">
           <a href="#features" className="text-gray-600 hover:text-gray-900 transition-colors">Features</a>
           <a href="#how-it-works" className="text-gray-600 hover:text-gray-900 transition-colors">How it Works</a>
-          <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
+          <Button variant="outline" className="border-blue-500 text-blue-500 hover:bg-blue-50">
             Sign In
           </Button>
-          <Button className="bg-blue-600 hover:bg-blue-700">
+          <Button className="bg-blue-500 hover:bg-blue-600">
             Get Started
           </Button>
         </div>
@@ -88,20 +88,20 @@ function App() {
 
       {/* Hero Section */}
       <section className="px-6 py-20 text-center max-w-6xl mx-auto">
-        <div className="mb-6 inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium">
+        <div className="mb-6 inline-flex items-center gap-2 bg-blue-50 text-blue-600 px-4 py-2 rounded-full text-sm font-medium">
           <Sparkles className="h-4 w-4" />
           AI-Powered Study Assistant
         </div>
         <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
           Transform Any Content Into
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800"> Smart Study Material</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-700"> Smart Study Material</span>
         </h1>
         <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
           Upload documents, videos, or audio files and let our AI create personalized summaries and flashcards.
           Study smarter, not harder with Studen.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-          <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4">
+          <Button size="lg" className="bg-blue-500 hover:bg-blue-600 text-lg px-8 py-4">
             Start Studying for Free
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
@@ -116,7 +116,7 @@ function App() {
           <div className="bg-white rounded-2xl shadow-2xl p-8 border border-gray-200">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="flex flex-col items-center p-4 bg-blue-50 rounded-xl">
-                <FileText className="h-12 w-12 text-blue-600 mb-3" />
+                <FileText className="h-12 w-12 text-blue-500 mb-3" />
                 <span className="font-semibold text-gray-900">Upload Content</span>
               </div>
               <div className="flex flex-col items-center p-4 bg-blue-100 rounded-xl">
@@ -124,7 +124,7 @@ function App() {
                 <span className="font-semibold text-gray-900">AI Processing</span>
               </div>
               <div className="flex flex-col items-center p-4 bg-blue-50 rounded-xl">
-                <Zap className="h-12 w-12 text-blue-800 mb-3" />
+                <Zap className="h-12 w-12 text-blue-700 mb-3" />
                 <span className="font-semibold text-gray-900">Study Materials</span>
               </div>
             </div>
@@ -147,7 +147,7 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
               <div key={index} className="text-center group">
-                <div className="bg-gradient-to-br from-blue-50 to-blue-100 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 text-blue-600 group-hover:scale-110 transition-transform duration-300">
+                <div className="bg-gradient-to-br from-blue-50 to-blue-100 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 text-blue-500 group-hover:scale-110 transition-transform duration-300">
                   {feature.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">{feature.title}</h3>
@@ -172,7 +172,7 @@ function App() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="text-center">
-              <div className="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">
+              <div className="bg-blue-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">
                 1
               </div>
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">Upload Your Content</h3>
@@ -182,7 +182,7 @@ function App() {
             </div>
 
             <div className="text-center">
-              <div className="bg-blue-700 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">
+              <div className="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">
                 2
               </div>
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">AI Analysis</h3>
@@ -192,7 +192,7 @@ function App() {
             </div>
 
             <div className="text-center">
-              <div className="bg-blue-800 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">
+              <div className="bg-blue-700 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">
                 3
               </div>
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">Study & Learn</h3>
@@ -218,22 +218,22 @@ function App() {
               <div className="space-y-4">
                 {benefits.map((benefit, index) => (
                   <div key={index} className="flex items-center gap-4">
-                    <CheckCircle className="h-6 w-6 text-blue-600 flex-shrink-0" />
+                    <CheckCircle className="h-6 w-6 text-blue-500 flex-shrink-0" />
                     <span className="text-lg text-gray-700">{benefit}</span>
                   </div>
                 ))}
               </div>
               <div className="mt-8">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+                <Button size="lg" className="bg-blue-500 hover:bg-blue-600">
                   Start Your Free Trial
                 </Button>
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl p-8">
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8">
               <div className="bg-white rounded-xl p-6 shadow-lg">
                 <div className="flex items-center gap-3 mb-4">
-                  <Users className="h-8 w-8 text-blue-600" />
+                  <Users className="h-8 w-8 text-blue-500" />
                   <div>
                     <div className="font-semibold text-gray-900">50,000+</div>
                     <div className="text-sm text-gray-600">Active Students</div>
@@ -247,7 +247,7 @@ function App() {
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Star className="h-8 w-8 text-blue-500" />
+                  <Star className="h-8 w-8 text-blue-700" />
                   <div>
                     <div className="font-semibold text-gray-900">4.9/5</div>
                     <div className="text-sm text-gray-600">Student Rating</div>
@@ -276,7 +276,7 @@ function App() {
               <div key={index} className="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
                 <div className="flex gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-blue-400 text-blue-400" />
+                    <Star key={i} className="h-5 w-5 fill-blue-500 text-blue-500" />
                   ))}
                 </div>
                 <p className="text-gray-700 mb-6 leading-relaxed">"{testimonial.content}"</p>
@@ -291,7 +291,7 @@ function App() {
       </section>
 
       {/* CTA Section */}
-      <section className="px-6 py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+      <section className="px-6 py-20 bg-gradient-to-r from-blue-500 to-blue-700 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Ready to Transform Your Study Habits?
@@ -317,7 +317,7 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
               <div className="flex items-center gap-2 mb-4">
-                <BookOpen className="h-8 w-8 text-white" />
+                <BookOpen className="h-8 w-8 text-blue-400" />
                 <span className="text-2xl font-bold">Studen</span>
               </div>
               <p className="text-gray-400 mb-6 max-w-md">
